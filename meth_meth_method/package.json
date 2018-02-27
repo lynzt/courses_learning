@@ -1,0 +1,8 @@
+{
+  "name": "langs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha --recursive"
+  }
+}

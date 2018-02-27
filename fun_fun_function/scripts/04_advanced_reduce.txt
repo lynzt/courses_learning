@@ -1,0 +1,7 @@
+harry potter|matches|5|50
+harry potter|broomstick|200|2
+harry potter|owl|50|1
+harry potter|wand|200|4
+ron weesley|broomstick|50|1
+ron weesley|owl|80|2
+ron weesley|wand|30|3
