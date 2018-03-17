@@ -3,7 +3,7 @@ services:
   datascience-notebook:
     image: jupyter/tensorflow-notebook
     volumes:
-      - /Users/lynzt/coding/courses/learning:/home/jovyan/work
+      - $PWD/jupyter:/home/jovyan/work
     ports:
       - 8888:8888
     container_name:   tensorflow

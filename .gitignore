@@ -1,0 +1,4 @@
+*.DS_Store
+*.pyc
+
+/nn/jupyter/deep_learning_ai(ng)

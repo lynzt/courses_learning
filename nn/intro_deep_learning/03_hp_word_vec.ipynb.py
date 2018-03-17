@@ -57,7 +57,7 @@ for book_filename in book_filenames:
 
 # pickle - python specific way to serializes the data structure (binary)
 # http://www.diveintopython3.net/serializing.html
-tokenizer = nltk.data.load('tokenizers/punkt/english.pickle') 
+tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
 raw_sentences = tokenizer.tokenize(corpus_raw)
 
 
@@ -72,7 +72,7 @@ def sentence_to_wordlist(raw):
     words = clean.split()
 
     valid_words = [word.lower() for word in words if word.lower() not in stops]
-    
+
     return valid_words
 
 
@@ -104,7 +104,7 @@ print("The book corpus contains {0:,} tokens".format(token_count))
 # In[14]:
 
 
-# build model - 
+# build model -
 #DISTANCE, SIMILARITY, RANKING
 
 # Dimensionality of the resulting word vectors.
@@ -238,12 +238,12 @@ points.plot.scatter("x", "y", s=10, figsize=(20, 12))
 def plot_region(x_bounds, y_bounds):
     slice = points[
         (x_bounds[0] <= points.x) &
-        (points.x <= x_bounds[1]) & 
+        (points.x <= x_bounds[1]) &
         (y_bounds[0] <= points.y) &
         (points.y <= y_bounds[1])
     ]
-    
-    
+
+
     ax = slice.plot.scatter("x", "y", s=35, figsize=(10, 8))
     for i, point in slice.iterrows():
         ax.text(point.x + 0.005, point.y + 0.005, point.word, fontsize=11)
@@ -288,4 +288,3 @@ def nearest_similarity_cosmul(start1, end1, end2):
 nearest_similarity_cosmul("harry", "ron", "draco")
 # nearest_similarity_cosmul("Jaime", "sword", "wine")
 # nearest_similarity_cosmul("Arya", "Nymeria", "dragons")
-
